@@ -1,0 +1,953 @@
+2025-10-01T00:02:23.288-07:00  INFO 2432 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T00:02:23.556-07:00  INFO 2432 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T00:02:23.564-07:00  INFO 2432 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T00:02:23.567-07:00  INFO 2432 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T00:02:23.584-07:00  INFO 2432 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T00:03:51.373-07:00  INFO 7172 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 7172 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T00:03:51.379-07:00  INFO 7172 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T00:03:53.407-07:00  INFO 7172 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T00:03:53.553-07:00  INFO 7172 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+2025-10-01T00:03:54.899-07:00  INFO 7172 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-01T00:03:54.924-07:00  INFO 7172 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T00:03:54.925-07:00  INFO 7172 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-10-01T00:03:55.118-07:00  INFO 7172 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T00:03:55.120-07:00  INFO 7172 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3596 ms
+2025-10-01T00:03:55.494-07:00  INFO 7172 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T00:03:55.611-07:00  INFO 7172 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-10-01T00:03:55.692-07:00  INFO 7172 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T00:03:56.205-07:00  INFO 7172 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T00:03:56.256-07:00  INFO 7172 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T00:03:56.781-07:00  INFO 7172 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7db47323
+2025-10-01T00:03:56.785-07:00  INFO 7172 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T00:03:56.864-07:00  WARN 7172 --- [olx-resale-app] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T00:03:56.866-07:00  WARN 7172 --- [olx-resale-app] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-01T00:03:58.527-07:00  INFO 7172 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T00:03:58.621-07:00  INFO 7172 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T00:03:59.396-07:00  WARN 7172 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T00:04:00.288-07:00  INFO 7172 --- [olx-resale-app] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b9ca528, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66011fbc, org.springframework.security.web.context.SecurityContextHolderFilter@24caa80, org.springframework.security.web.header.HeaderWriterFilter@7bb4f09d, org.springframework.web.filter.CorsFilter@77afdbc5, org.springframework.security.web.authentication.logout.LogoutFilter@76929266, olx_resale_app.olx_resale_app.filter.JwtAuthFilter@33ce081a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44d36b56, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ce1cc03, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@757ad227, org.springframework.security.web.session.SessionManagementFilter@578ac0be, org.springframework.security.web.access.ExceptionTranslationFilter@31887330, org.springframework.security.web.access.intercept.AuthorizationFilter@642b2176]
+2025-10-01T00:04:00.890-07:00  INFO 7172 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2025-10-01T00:04:00.912-07:00  INFO 7172 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 10.439 seconds (process running for 11.325)
+2025-10-01T00:04:53.507-07:00  INFO 7172 --- [olx-resale-app] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T00:04:53.509-07:00  INFO 7172 --- [olx-resale-app] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T00:04:53.513-07:00  INFO 7172 --- [olx-resale-app] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-10-01T00:07:42.106-07:00  INFO 7172 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T00:07:42.110-07:00  INFO 7172 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T00:07:42.136-07:00  INFO 7172 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T00:10:36.577-07:00  INFO 10660 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 10660 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T00:10:36.582-07:00  INFO 10660 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T00:10:38.762-07:00  INFO 10660 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T00:10:38.905-07:00  INFO 10660 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 1 JPA repository interface.
+2025-10-01T00:10:40.276-07:00  INFO 10660 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-01T00:10:40.305-07:00  INFO 10660 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T00:10:40.305-07:00  INFO 10660 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T00:10:40.438-07:00  INFO 10660 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T00:10:40.439-07:00  INFO 10660 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3747 ms
+2025-10-01T00:10:40.830-07:00  INFO 10660 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T00:10:40.954-07:00  INFO 10660 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T00:10:41.045-07:00  INFO 10660 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T00:10:41.738-07:00  INFO 10660 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T00:10:41.805-07:00  INFO 10660 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T00:10:42.421-07:00  INFO 10660 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18a0721b
+2025-10-01T00:10:42.426-07:00  INFO 10660 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T00:10:42.505-07:00  WARN 10660 --- [olx-resale-app] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T00:10:42.508-07:00  WARN 10660 --- [olx-resale-app] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-01T00:10:42.553-07:00  INFO 10660 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T00:10:44.411-07:00  INFO 10660 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T00:10:44.522-07:00  INFO 10660 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T00:10:45.274-07:00  WARN 10660 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T00:10:46.928-07:00  INFO 10660 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-01T00:10:46.949-07:00  INFO 10660 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 11.608 seconds (process running for 12.41)
+2025-10-01T00:10:58.416-07:00  INFO 10660 --- [olx-resale-app] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T00:10:58.417-07:00  INFO 10660 --- [olx-resale-app] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T00:10:58.423-07:00  INFO 10660 --- [olx-resale-app] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-10-01T00:42:29.961-07:00  INFO 10660 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T00:42:30.257-07:00  INFO 10660 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T00:42:30.314-07:00  INFO 10660 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T00:42:30.337-07:00  INFO 10660 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T00:42:30.354-07:00  INFO 10660 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T00:44:37.225-07:00  INFO 9000 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 9000 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T00:44:37.265-07:00  INFO 9000 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T00:44:45.045-07:00  INFO 9000 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T00:44:45.491-07:00  INFO 9000 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 388 ms. Found 1 JPA repository interface.
+2025-10-01T00:44:49.772-07:00  INFO 9000 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-01T00:44:49.925-07:00  INFO 9000 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T00:44:49.926-07:00  INFO 9000 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T00:44:50.218-07:00  INFO 9000 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T00:44:50.219-07:00  INFO 9000 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 12465 ms
+2025-10-01T00:44:51.365-07:00  INFO 9000 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T00:44:52.011-07:00  INFO 9000 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T00:44:52.582-07:00  INFO 9000 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T00:44:54.216-07:00  INFO 9000 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T00:44:54.456-07:00  INFO 9000 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T00:44:58.347-07:00  INFO 9000 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@aa8dce8
+2025-10-01T00:44:58.350-07:00  INFO 9000 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T00:44:58.911-07:00  WARN 9000 --- [olx-resale-app] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T00:44:58.920-07:00  WARN 9000 --- [olx-resale-app] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-01T00:44:59.046-07:00  INFO 9000 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T00:45:03.744-07:00  INFO 9000 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T00:45:03.997-07:00  INFO 9000 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T00:45:06.189-07:00  WARN 9000 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T00:45:09.417-07:00  INFO 9000 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-01T00:45:09.441-07:00  INFO 9000 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 35.633 seconds (process running for 39.091)
+2025-10-01T00:45:20.900-07:00  INFO 9000 --- [olx-resale-app] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T00:45:20.901-07:00  INFO 9000 --- [olx-resale-app] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T00:45:20.903-07:00  INFO 9000 --- [olx-resale-app] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-01T00:53:14.581-07:00  INFO 9000 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T00:53:14.812-07:00  INFO 9000 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T00:53:14.819-07:00  INFO 9000 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T00:53:14.822-07:00  INFO 9000 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T00:53:14.904-07:00  INFO 9000 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T00:53:23.387-07:00  INFO 8124 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 8124 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T00:53:23.395-07:00  INFO 8124 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T00:53:27.154-07:00  INFO 8124 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T00:53:27.319-07:00  INFO 8124 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139 ms. Found 1 JPA repository interface.
+2025-10-01T00:53:28.875-07:00  INFO 8124 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T00:53:28.922-07:00  INFO 8124 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T00:53:28.923-07:00  INFO 8124 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T00:53:29.174-07:00  INFO 8124 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T00:53:29.175-07:00  INFO 8124 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5646 ms
+2025-10-01T00:53:29.662-07:00  INFO 8124 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T00:53:29.809-07:00  INFO 8124 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T00:53:29.900-07:00  INFO 8124 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T00:53:30.650-07:00  INFO 8124 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T00:53:30.725-07:00  INFO 8124 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T00:53:31.521-07:00  INFO 8124 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f6f0fe2
+2025-10-01T00:53:31.525-07:00  INFO 8124 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T00:53:33.228-07:00  INFO 8124 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T00:53:35.003-07:00  INFO 8124 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T00:53:35.575-07:00  INFO 8124 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T00:53:36.357-07:00  WARN 8124 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T00:53:40.850-07:00  INFO 8124 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T00:53:40.889-07:00  INFO 8124 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 18.75 seconds (process running for 19.754)
+2025-10-01T00:56:01.797-07:00  INFO 8124 --- [olx-resale-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T00:56:01.798-07:00  INFO 8124 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T00:56:01.801-07:00  INFO 8124 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-01T00:59:44.892-07:00  INFO 8124 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T00:59:45.151-07:00  INFO 8124 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T00:59:45.165-07:00  INFO 8124 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T00:59:45.173-07:00  INFO 8124 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T00:59:45.210-07:00  INFO 8124 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:03:07.226-07:00  INFO 2964 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 2964 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:03:07.234-07:00  INFO 2964 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:03:09.424-07:00  INFO 2964 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:03:09.564-07:00  INFO 2964 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 1 JPA repository interface.
+2025-10-01T01:03:11.126-07:00  INFO 2964 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:03:11.155-07:00  INFO 2964 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:03:11.155-07:00  INFO 2964 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:03:11.301-07:00  INFO 2964 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:03:11.302-07:00  INFO 2964 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3906 ms
+2025-10-01T01:03:11.773-07:00  INFO 2964 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:03:11.972-07:00  INFO 2964 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:03:12.065-07:00  INFO 2964 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:03:12.739-07:00  INFO 2964 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:03:12.812-07:00  INFO 2964 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:03:13.526-07:00  INFO 2964 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1eb9d69a
+2025-10-01T01:03:13.532-07:00  INFO 2964 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:03:13.797-07:00  INFO 2964 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:03:15.991-07:00  INFO 2964 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:03:16.110-07:00  INFO 2964 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:03:16.842-07:00  WARN 2964 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T01:03:18.836-07:00  INFO 2964 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T01:03:18.856-07:00  INFO 2964 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 12.741 seconds (process running for 13.527)
+2025-10-01T01:04:59.108-07:00  INFO 2964 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T01:04:59.347-07:00  INFO 2964 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T01:04:59.355-07:00  INFO 2964 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:04:59.359-07:00  INFO 2964 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T01:04:59.376-07:00  INFO 2964 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:05:04.244-07:00  INFO 1820 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 1820 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:05:04.251-07:00  INFO 1820 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:05:06.663-07:00  INFO 1820 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:05:06.806-07:00  INFO 1820 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 1 JPA repository interface.
+2025-10-01T01:05:08.811-07:00  INFO 1820 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:05:08.851-07:00  INFO 1820 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:05:08.853-07:00  INFO 1820 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:05:08.999-07:00  INFO 1820 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:05:09.000-07:00  INFO 1820 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4596 ms
+2025-10-01T01:05:09.418-07:00  INFO 1820 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:05:09.594-07:00  INFO 1820 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:05:09.682-07:00  INFO 1820 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:05:10.365-07:00  INFO 1820 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:05:10.437-07:00  INFO 1820 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:05:11.117-07:00  INFO 1820 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1eb9d69a
+2025-10-01T01:05:11.121-07:00  INFO 1820 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:05:11.292-07:00  INFO 1820 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:05:13.309-07:00  INFO 1820 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:05:13.454-07:00  INFO 1820 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:05:14.295-07:00  WARN 1820 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T01:05:15.895-07:00  INFO 1820 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T01:05:15.915-07:00  INFO 1820 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 12.918 seconds (process running for 14.073)
+2025-10-01T01:06:10.983-07:00  INFO 1820 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T01:06:11.234-07:00  INFO 1820 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T01:06:11.242-07:00  INFO 1820 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:06:11.248-07:00  INFO 1820 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T01:06:11.274-07:00  INFO 1820 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:06:16.334-07:00  INFO 1416 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 1416 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:06:16.376-07:00  INFO 1416 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:06:19.348-07:00  INFO 1416 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:06:19.529-07:00  INFO 1416 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 1 JPA repository interface.
+2025-10-01T01:06:21.064-07:00  INFO 1416 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:06:21.092-07:00  INFO 1416 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:06:21.093-07:00  INFO 1416 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:06:21.223-07:00  INFO 1416 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:06:21.224-07:00  INFO 1416 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4612 ms
+2025-10-01T01:06:21.265-07:00 ERROR 1416 --- [olx-resale-app] [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthFilter' defined in file [C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes\olx_resale_app\olx_resale_app\filter\JwtAuthFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtServiceImpl': Injection of autowired dependencies failed
+2025-10-01T01:06:21.341-07:00  INFO 1416 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-01T01:06:21.365-07:00  WARN 1416 --- [olx-resale-app] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2025-10-01T01:06:21.388-07:00  INFO 1416 --- [olx-resale-app] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-01T01:06:21.467-07:00 ERROR 1416 --- [olx-resale-app] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:170) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar:3.5.6]
+	at olx_resale_app.olx_resale_app.OlxResaleAppApplication.main(OlxResaleAppApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:517) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:219) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:193) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167) ~[spring-boot-3.5.6.jar:3.5.6]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthFilter' defined in file [C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes\olx_resale_app\olx_resale_app\filter\JwtAuthFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtServiceImpl': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:230) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:184) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:179) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:164) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:96) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:271) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:245) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:773) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:412) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:438) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) ~[spring-boot-3.5.6.jar:3.5.6]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtServiceImpl': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:515) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1760) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1643) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 54 common frames omitted
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'spring.secret-key' in value "${spring.secret-key}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81) ~[spring-core-6.2.11.jar:6.2.11]
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:423) ~[spring-core-6.2.11.jar:6.2.11]
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:128) ~[spring-core-6.2.11.jar:6.2.11]
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:118) ~[spring-core-6.2.11.jar:6.2.11]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:114) ~[spring-core-6.2.11.jar:6.2.11]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:293) ~[spring-core-6.2.11.jar:6.2.11]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:264) ~[spring-core-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:186) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:970) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1665) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1643) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 66 common frames omitted
+
+2025-10-01T01:06:50.690-07:00  INFO 6316 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 6316 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:06:50.696-07:00  INFO 6316 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:06:52.816-07:00  INFO 6316 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:06:52.951-07:00  INFO 6316 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 1 JPA repository interface.
+2025-10-01T01:06:54.318-07:00  INFO 6316 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:06:54.359-07:00  INFO 6316 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:06:54.360-07:00  INFO 6316 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:06:54.494-07:00  INFO 6316 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:06:54.495-07:00  INFO 6316 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3664 ms
+2025-10-01T01:06:54.879-07:00  INFO 6316 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:06:55.027-07:00  INFO 6316 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:06:55.126-07:00  INFO 6316 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:06:55.806-07:00  INFO 6316 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:06:55.866-07:00  INFO 6316 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:06:56.404-07:00  INFO 6316 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1eb9d69a
+2025-10-01T01:06:56.409-07:00  INFO 6316 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:06:56.578-07:00  INFO 6316 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:06:58.405-07:00  INFO 6316 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:06:58.539-07:00  INFO 6316 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:06:59.293-07:00  WARN 6316 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T01:07:00.811-07:00  INFO 6316 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T01:07:00.832-07:00  INFO 6316 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 11.222 seconds (process running for 12.019)
+2025-10-01T01:10:46.715-07:00  INFO 6316 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T01:10:46.957-07:00  INFO 6316 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T01:10:46.966-07:00  INFO 6316 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:10:46.970-07:00  INFO 6316 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T01:10:46.990-07:00  INFO 6316 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:10:53.238-07:00  INFO 9996 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 9996 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:10:53.245-07:00  INFO 9996 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:10:55.510-07:00  INFO 9996 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:10:55.669-07:00  INFO 9996 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 1 JPA repository interface.
+2025-10-01T01:10:57.169-07:00  INFO 9996 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:10:57.197-07:00  INFO 9996 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:10:57.198-07:00  INFO 9996 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:10:57.335-07:00  INFO 9996 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:10:57.336-07:00  INFO 9996 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3951 ms
+2025-10-01T01:10:57.728-07:00  INFO 9996 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:10:57.876-07:00  INFO 9996 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:10:57.963-07:00  INFO 9996 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:10:58.571-07:00  INFO 9996 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:10:58.637-07:00  INFO 9996 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:10:59.246-07:00  INFO 9996 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5dd23809
+2025-10-01T01:10:59.250-07:00  INFO 9996 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:10:59.494-07:00  INFO 9996 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:11:01.352-07:00  INFO 9996 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:11:01.475-07:00  INFO 9996 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:11:02.192-07:00  WARN 9996 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T01:11:03.848-07:00  INFO 9996 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T01:11:03.873-07:00  INFO 9996 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 11.71 seconds (process running for 12.627)
+2025-10-01T01:29:33.830-07:00  INFO 9996 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T01:29:34.057-07:00  INFO 9996 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T01:29:34.066-07:00  INFO 9996 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:29:34.070-07:00  INFO 9996 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T01:29:34.088-07:00  INFO 9996 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:29:42.477-07:00  INFO 10608 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 10608 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:29:42.483-07:00  INFO 10608 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:29:45.043-07:00  INFO 10608 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:29:45.210-07:00  INFO 10608 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144 ms. Found 1 JPA repository interface.
+2025-10-01T01:29:47.547-07:00  INFO 10608 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:29:47.579-07:00  INFO 10608 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:29:47.580-07:00  INFO 10608 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:29:47.759-07:00  INFO 10608 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:29:47.762-07:00  INFO 10608 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5145 ms
+2025-10-01T01:29:48.280-07:00  INFO 10608 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:29:48.459-07:00  INFO 10608 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:29:48.598-07:00  INFO 10608 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:29:49.436-07:00  INFO 10608 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:29:49.534-07:00  INFO 10608 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:29:50.261-07:00  INFO 10608 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@148b6f95
+2025-10-01T01:29:50.265-07:00  INFO 10608 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:29:50.482-07:00  INFO 10608 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:29:52.448-07:00  INFO 10608 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:29:52.593-07:00  INFO 10608 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:29:53.425-07:00  WARN 10608 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T01:29:55.696-07:00  INFO 10608 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T01:29:55.717-07:00  INFO 10608 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 14.442 seconds (process running for 15.296)
+2025-10-01T01:30:06.617-07:00  INFO 10608 --- [olx-resale-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T01:30:06.619-07:00  INFO 10608 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T01:30:06.622-07:00  INFO 10608 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-01T01:34:04.676-07:00  INFO 10608 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T01:34:04.936-07:00  INFO 10608 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T01:34:04.942-07:00  INFO 10608 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:34:04.947-07:00  INFO 10608 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T01:34:04.963-07:00  INFO 10608 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:34:12.018-07:00  INFO 3028 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 3028 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:34:12.027-07:00  INFO 3028 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:34:14.184-07:00  INFO 3028 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:34:14.322-07:00  INFO 3028 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 1 JPA repository interface.
+2025-10-01T01:34:15.802-07:00  INFO 3028 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:34:15.831-07:00  INFO 3028 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:34:15.832-07:00  INFO 3028 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:34:15.963-07:00  INFO 3028 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:34:15.964-07:00  INFO 3028 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3802 ms
+2025-10-01T01:34:16.370-07:00  INFO 3028 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:34:16.508-07:00  INFO 3028 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:34:16.598-07:00  INFO 3028 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:34:17.243-07:00  INFO 3028 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:34:17.317-07:00  INFO 3028 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:34:17.864-07:00  INFO 3028 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ee581db
+2025-10-01T01:34:17.867-07:00  INFO 3028 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:34:18.064-07:00  INFO 3028 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:34:19.947-07:00  INFO 3028 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:34:20.080-07:00  INFO 3028 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:34:20.741-07:00 ERROR 3028 --- [olx-resale-app] [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthFilter' defined in file [C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes\olx_resale_app\olx_resale_app\filter\JwtAuthFilter.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'webSecurityConfig' defined in file [C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes\olx_resale_app\olx_resale_app\security\WebSecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtAuthFilter': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2025-10-01T01:34:20.799-07:00  INFO 3028 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-01T01:34:20.806-07:00  WARN 3028 --- [olx-resale-app] [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1:housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.15/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.15/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.15/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.15/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.15/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.15/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.15/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.15/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.15/java.lang.Thread.run(Thread.java:842)
+2025-10-01T01:34:20.809-07:00  WARN 3028 --- [olx-resale-app] [main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1:connection-adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.15/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.15/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.15/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.15/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@17.0.15/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@17.0.15/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.15/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.15/java.lang.Thread.run(Thread.java:842)
+2025-10-01T01:34:20.814-07:00  WARN 3028 --- [olx-resale-app] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2025-10-01T01:34:20.815-07:00  INFO 3028 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:34:20.829-07:00  INFO 3028 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T01:34:20.851-07:00  INFO 3028 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:34:20.876-07:00  INFO 3028 --- [olx-resale-app] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-01T01:34:21.032-07:00 ERROR 3028 --- [olx-resale-app] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  jwtAuthFilter defined in file [C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes\olx_resale_app\olx_resale_app\filter\JwtAuthFilter.class]
+↑     ↓
+|  org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration
+↑     ↓
+|  webSecurityConfig defined in file [C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes\olx_resale_app\olx_resale_app\security\WebSecurityConfig.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2025-10-01T01:35:32.812-07:00  INFO 6316 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 6316 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:35:32.818-07:00  INFO 6316 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:35:35.155-07:00  INFO 6316 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:35:35.325-07:00  INFO 6316 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 1 JPA repository interface.
+2025-10-01T01:35:37.180-07:00  INFO 6316 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:35:37.211-07:00  INFO 6316 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:35:37.212-07:00  INFO 6316 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:35:37.418-07:00  INFO 6316 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:35:37.419-07:00  INFO 6316 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4486 ms
+2025-10-01T01:35:38.097-07:00  INFO 6316 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:35:38.246-07:00  INFO 6316 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:35:38.330-07:00  INFO 6316 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:35:39.012-07:00  INFO 6316 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:35:39.087-07:00  INFO 6316 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:35:39.621-07:00  INFO 6316 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@148b6f95
+2025-10-01T01:35:39.624-07:00  INFO 6316 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:35:39.762-07:00  INFO 6316 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:35:41.466-07:00  INFO 6316 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:35:41.608-07:00  INFO 6316 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:35:42.262-07:00  WARN 6316 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T01:35:43.620-07:00  INFO 6316 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T01:35:43.640-07:00  INFO 6316 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 12.083 seconds (process running for 13.019)
+2025-10-01T01:36:29.018-07:00  INFO 6316 --- [olx-resale-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T01:36:29.019-07:00  INFO 6316 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T01:36:29.024-07:00  INFO 6316 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-10-01T01:38:22.107-07:00  INFO 6316 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T01:38:22.334-07:00  INFO 6316 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T01:38:22.334-07:00  INFO 6316 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:38:22.351-07:00  INFO 6316 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T01:38:22.363-07:00  INFO 6316 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:38:29.235-07:00  INFO 8412 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 8412 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:38:29.239-07:00  INFO 8412 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:38:31.893-07:00  INFO 8412 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:38:32.044-07:00  INFO 8412 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interface.
+2025-10-01T01:38:34.186-07:00  INFO 8412 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:38:34.216-07:00  INFO 8412 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:38:34.217-07:00  INFO 8412 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:38:34.381-07:00  INFO 8412 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:38:34.383-07:00  INFO 8412 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5002 ms
+2025-10-01T01:38:34.945-07:00  INFO 8412 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:38:35.145-07:00  INFO 8412 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:38:35.286-07:00  INFO 8412 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:38:36.098-07:00  INFO 8412 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:38:36.255-07:00  INFO 8412 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:38:37.046-07:00  INFO 8412 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49a06087
+2025-10-01T01:38:37.050-07:00  INFO 8412 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:38:37.843-07:00  INFO 8412 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:38:40.394-07:00  INFO 8412 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:38:40.551-07:00  INFO 8412 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:38:41.281-07:00  WARN 8412 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T01:38:43.094-07:00  INFO 8412 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T01:38:43.136-07:00  INFO 8412 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 15.087 seconds (process running for 15.952)
+2025-10-01T01:38:59.231-07:00  INFO 8412 --- [olx-resale-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T01:38:59.232-07:00  INFO 8412 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T01:38:59.235-07:00  INFO 8412 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-01T01:44:20.428-07:00  INFO 8412 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T01:44:20.663-07:00  INFO 8412 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T01:44:20.673-07:00  INFO 8412 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:44:20.677-07:00  INFO 8412 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T01:44:20.689-07:00  INFO 8412 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:44:27.380-07:00  INFO 12480 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 12480 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:44:27.387-07:00  INFO 12480 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:44:29.520-07:00  INFO 12480 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:44:29.664-07:00  INFO 12480 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 1 JPA repository interface.
+2025-10-01T01:44:31.064-07:00  INFO 12480 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:44:31.104-07:00  INFO 12480 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:44:31.105-07:00  INFO 12480 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:44:31.270-07:00  INFO 12480 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:44:31.271-07:00  INFO 12480 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3755 ms
+2025-10-01T01:44:31.650-07:00  INFO 12480 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:44:31.801-07:00  INFO 12480 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:44:31.880-07:00  INFO 12480 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:44:32.491-07:00  INFO 12480 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:44:32.577-07:00  INFO 12480 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:44:33.394-07:00  INFO 12480 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1eb9d69a
+2025-10-01T01:44:33.402-07:00  INFO 12480 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:44:33.714-07:00  INFO 12480 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:44:35.965-07:00  INFO 12480 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:44:36.101-07:00  INFO 12480 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:44:36.951-07:00  WARN 12480 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T01:44:39.381-07:00  INFO 12480 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T01:44:39.403-07:00  INFO 12480 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 13.106 seconds (process running for 13.86)
+2025-10-01T01:44:54.114-07:00  INFO 12480 --- [olx-resale-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T01:44:54.114-07:00  INFO 12480 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T01:44:54.116-07:00  INFO 12480 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-01T01:46:59.761-07:00  INFO 12480 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T01:47:00.353-07:00  INFO 12480 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T01:47:00.389-07:00  INFO 12480 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:47:00.394-07:00  INFO 12480 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T01:47:00.432-07:00  INFO 12480 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:47:12.294-07:00  INFO 10684 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 10684 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:47:12.299-07:00  INFO 10684 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:47:14.503-07:00  INFO 10684 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:47:14.641-07:00  INFO 10684 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 1 JPA repository interface.
+2025-10-01T01:47:16.093-07:00  INFO 10684 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:47:16.119-07:00  INFO 10684 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:47:16.120-07:00  INFO 10684 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:47:16.253-07:00  INFO 10684 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:47:16.254-07:00  INFO 10684 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3820 ms
+2025-10-01T01:47:16.635-07:00  INFO 10684 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:47:16.777-07:00  INFO 10684 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:47:16.859-07:00  INFO 10684 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:47:17.468-07:00  INFO 10684 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:47:17.533-07:00  INFO 10684 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:47:18.144-07:00  INFO 10684 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6339e604
+2025-10-01T01:47:18.149-07:00  INFO 10684 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:47:18.335-07:00  INFO 10684 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:47:20.280-07:00  INFO 10684 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:47:20.403-07:00  INFO 10684 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:47:21.219-07:00  WARN 10684 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T01:47:22.851-07:00  INFO 10684 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T01:47:22.870-07:00  INFO 10684 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 11.642 seconds (process running for 12.464)
+2025-10-01T01:47:30.197-07:00  INFO 10684 --- [olx-resale-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T01:47:30.198-07:00  INFO 10684 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T01:47:30.201-07:00  INFO 10684 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-01T01:47:55.941-07:00  INFO 10684 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T01:47:56.186-07:00  INFO 10684 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T01:47:56.194-07:00  INFO 10684 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:47:56.199-07:00  INFO 10684 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T01:47:56.222-07:00  INFO 10684 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:48:00.586-07:00  INFO 14752 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 14752 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:48:00.592-07:00  INFO 14752 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:48:02.639-07:00  INFO 14752 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:48:02.774-07:00  INFO 14752 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 1 JPA repository interface.
+2025-10-01T01:48:04.195-07:00  INFO 14752 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:48:04.223-07:00  INFO 14752 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:48:04.224-07:00  INFO 14752 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:48:04.381-07:00  INFO 14752 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:48:04.382-07:00  INFO 14752 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3667 ms
+2025-10-01T01:48:04.782-07:00  INFO 14752 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:48:04.934-07:00  INFO 14752 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:48:05.024-07:00  INFO 14752 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:48:05.619-07:00  INFO 14752 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:48:05.669-07:00  INFO 14752 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:48:06.188-07:00  INFO 14752 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6339e604
+2025-10-01T01:48:06.192-07:00  INFO 14752 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:48:06.391-07:00  INFO 14752 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:48:08.157-07:00  INFO 14752 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:48:08.274-07:00  INFO 14752 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:48:08.890-07:00  WARN 14752 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T01:48:10.640-07:00  INFO 14752 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T01:48:10.667-07:00  INFO 14752 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 11.145 seconds (process running for 11.976)
+2025-10-01T01:48:14.905-07:00  INFO 14752 --- [olx-resale-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T01:48:14.905-07:00  INFO 14752 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T01:48:14.907-07:00  INFO 14752 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-01T01:50:18.250-07:00  INFO 14752 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T01:50:18.526-07:00  INFO 14752 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T01:50:18.535-07:00  INFO 14752 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:50:18.539-07:00  INFO 14752 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T01:50:18.557-07:00  INFO 14752 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:50:26.686-07:00  INFO 8996 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 8996 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:50:26.695-07:00  INFO 8996 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:50:29.853-07:00  INFO 8996 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:50:29.999-07:00  INFO 8996 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interface.
+2025-10-01T01:50:31.713-07:00  INFO 8996 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:50:31.746-07:00  INFO 8996 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:50:31.747-07:00  INFO 8996 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:50:31.993-07:00  INFO 8996 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:50:31.994-07:00  INFO 8996 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5140 ms
+2025-10-01T01:50:32.442-07:00  INFO 8996 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:50:32.672-07:00  INFO 8996 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:50:32.765-07:00  INFO 8996 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:50:33.520-07:00  INFO 8996 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:50:33.600-07:00  INFO 8996 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:50:34.314-07:00  INFO 8996 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f8900b0
+2025-10-01T01:50:34.318-07:00  INFO 8996 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:50:34.587-07:00  INFO 8996 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:50:37.628-07:00  INFO 8996 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:50:37.871-07:00  INFO 8996 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:50:38.803-07:00  WARN 8996 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T01:50:40.728-07:00  INFO 8996 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T01:50:40.766-07:00  INFO 8996 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 15.574 seconds (process running for 16.481)
+2025-10-01T01:50:50.591-07:00  INFO 8996 --- [olx-resale-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T01:50:50.592-07:00  INFO 8996 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T01:50:50.594-07:00  INFO 8996 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-01T01:52:38.150-07:00  INFO 8996 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T01:52:38.400-07:00  INFO 8996 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T01:52:38.409-07:00  INFO 8996 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:52:38.413-07:00  INFO 8996 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T01:52:38.432-07:00  INFO 8996 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:52:45.475-07:00  INFO 4680 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 4680 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:52:45.483-07:00  INFO 4680 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:52:47.723-07:00  INFO 4680 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:52:47.880-07:00  INFO 4680 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133 ms. Found 1 JPA repository interface.
+2025-10-01T01:52:50.299-07:00  INFO 4680 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:52:50.348-07:00  INFO 4680 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:52:50.349-07:00  INFO 4680 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:52:50.619-07:00  INFO 4680 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:52:50.620-07:00  INFO 4680 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4999 ms
+2025-10-01T01:52:51.056-07:00  INFO 4680 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:52:51.275-07:00  INFO 4680 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:52:51.399-07:00  INFO 4680 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:52:52.135-07:00  INFO 4680 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:52:52.230-07:00  INFO 4680 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:52:52.962-07:00  INFO 4680 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fe5da76
+2025-10-01T01:52:52.966-07:00  INFO 4680 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:52:53.162-07:00  INFO 4680 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:52:55.193-07:00  INFO 4680 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:52:55.346-07:00  INFO 4680 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:52:56.600-07:00  WARN 4680 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T01:52:59.050-07:00  INFO 4680 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T01:52:59.072-07:00  INFO 4680 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 14.696 seconds (process running for 15.529)
+2025-10-01T01:53:24.662-07:00  INFO 4680 --- [olx-resale-app] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T01:53:24.663-07:00  INFO 4680 --- [olx-resale-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T01:53:24.667-07:00  INFO 4680 --- [olx-resale-app] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-10-01T01:55:07.483-07:00  INFO 4680 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T01:55:07.742-07:00  INFO 4680 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T01:55:07.751-07:00  INFO 4680 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:55:07.755-07:00  INFO 4680 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T01:55:07.774-07:00  INFO 4680 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:55:14.542-07:00  INFO 7648 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 7648 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:55:14.548-07:00  INFO 7648 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:55:16.729-07:00  INFO 7648 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:55:16.874-07:00  INFO 7648 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 1 JPA repository interface.
+2025-10-01T01:55:18.593-07:00  INFO 7648 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:55:18.621-07:00  INFO 7648 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:55:18.622-07:00  INFO 7648 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:55:18.756-07:00  INFO 7648 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:55:18.757-07:00  INFO 7648 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4063 ms
+2025-10-01T01:55:19.156-07:00  INFO 7648 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:55:19.341-07:00  INFO 7648 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:55:19.456-07:00  INFO 7648 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:55:20.429-07:00  INFO 7648 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:55:20.500-07:00  INFO 7648 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:55:21.112-07:00  INFO 7648 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fe5da76
+2025-10-01T01:55:21.116-07:00  INFO 7648 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:55:21.323-07:00  INFO 7648 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:55:23.077-07:00  INFO 7648 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:55:23.203-07:00  INFO 7648 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:55:23.841-07:00  WARN 7648 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T01:55:25.204-07:00  INFO 7648 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T01:55:25.223-07:00  INFO 7648 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 11.751 seconds (process running for 12.493)
+2025-10-01T01:55:45.312-07:00  INFO 7648 --- [olx-resale-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T01:55:45.313-07:00  INFO 7648 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T01:55:45.317-07:00  INFO 7648 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-10-01T01:59:24.914-07:00  INFO 7648 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T01:59:25.153-07:00  INFO 7648 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T01:59:25.162-07:00  INFO 7648 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:59:25.168-07:00  INFO 7648 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T01:59:25.192-07:00  INFO 7648 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T01:59:32.377-07:00  INFO 9668 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 9668 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T01:59:32.382-07:00  INFO 9668 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T01:59:34.785-07:00  INFO 9668 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T01:59:34.944-07:00  INFO 9668 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 1 JPA repository interface.
+2025-10-01T01:59:36.760-07:00  INFO 9668 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T01:59:36.792-07:00  INFO 9668 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T01:59:36.793-07:00  INFO 9668 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T01:59:37.153-07:00  INFO 9668 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T01:59:37.154-07:00  INFO 9668 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4646 ms
+2025-10-01T01:59:37.600-07:00  INFO 9668 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T01:59:37.728-07:00  INFO 9668 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T01:59:37.851-07:00  INFO 9668 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T01:59:38.496-07:00  INFO 9668 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T01:59:38.559-07:00  INFO 9668 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T01:59:39.118-07:00  INFO 9668 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33e8e146
+2025-10-01T01:59:39.122-07:00  INFO 9668 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T01:59:39.372-07:00  INFO 9668 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T01:59:41.446-07:00  INFO 9668 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T01:59:41.622-07:00  INFO 9668 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T01:59:42.456-07:00  WARN 9668 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T01:59:44.174-07:00  INFO 9668 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T01:59:44.198-07:00  INFO 9668 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 12.882 seconds (process running for 13.661)
+2025-10-01T01:59:49.665-07:00  INFO 9668 --- [olx-resale-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T01:59:49.666-07:00  INFO 9668 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T01:59:49.671-07:00  INFO 9668 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-10-01T02:01:27.042-07:00  INFO 9668 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T02:01:27.309-07:00  INFO 9668 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T02:01:27.316-07:00  INFO 9668 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T02:01:27.320-07:00  INFO 9668 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T02:01:27.336-07:00  INFO 9668 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T02:01:34.033-07:00  INFO 11336 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 11336 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T02:01:34.038-07:00  INFO 11336 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T02:01:36.143-07:00  INFO 11336 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T02:01:36.284-07:00  INFO 11336 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 1 JPA repository interface.
+2025-10-01T02:01:37.718-07:00  INFO 11336 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T02:01:37.748-07:00  INFO 11336 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T02:01:37.749-07:00  INFO 11336 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T02:01:37.896-07:00  INFO 11336 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T02:01:37.897-07:00  INFO 11336 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3718 ms
+2025-10-01T02:01:38.289-07:00  INFO 11336 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T02:01:38.409-07:00  INFO 11336 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T02:01:38.533-07:00  INFO 11336 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T02:01:39.166-07:00  INFO 11336 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T02:01:39.275-07:00  INFO 11336 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T02:01:39.968-07:00  INFO 11336 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42edde25
+2025-10-01T02:01:39.971-07:00  INFO 11336 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T02:01:40.174-07:00  INFO 11336 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T02:01:42.220-07:00  INFO 11336 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T02:01:42.413-07:00  INFO 11336 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T02:01:43.120-07:00  WARN 11336 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T02:01:44.773-07:00  INFO 11336 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T02:01:44.795-07:00  INFO 11336 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 11.838 seconds (process running for 12.611)
+2025-10-01T02:01:54.994-07:00  INFO 11336 --- [olx-resale-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T02:01:54.995-07:00  INFO 11336 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T02:01:54.999-07:00  INFO 11336 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-10-01T02:06:01.351-07:00  INFO 11336 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T02:06:01.608-07:00  INFO 11336 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T02:06:01.615-07:00  INFO 11336 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T02:06:01.618-07:00  INFO 11336 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T02:06:01.634-07:00  INFO 11336 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T02:06:09.641-07:00  INFO 7104 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 7104 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T02:06:09.647-07:00  INFO 7104 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T02:06:12.068-07:00  INFO 7104 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T02:06:12.212-07:00  INFO 7104 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 1 JPA repository interface.
+2025-10-01T02:06:13.649-07:00  INFO 7104 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T02:06:13.676-07:00  INFO 7104 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T02:06:13.677-07:00  INFO 7104 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T02:06:13.815-07:00  INFO 7104 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T02:06:13.816-07:00  INFO 7104 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3997 ms
+2025-10-01T02:06:14.223-07:00  INFO 7104 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T02:06:14.378-07:00  INFO 7104 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T02:06:14.481-07:00  INFO 7104 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T02:06:15.195-07:00  INFO 7104 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T02:06:15.280-07:00  INFO 7104 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T02:06:15.915-07:00  INFO 7104 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77d95e5a
+2025-10-01T02:06:15.919-07:00  INFO 7104 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T02:06:16.130-07:00  INFO 7104 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T02:06:17.935-07:00  INFO 7104 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T02:06:18.083-07:00  INFO 7104 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T02:06:18.818-07:00  WARN 7104 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T02:06:20.584-07:00  INFO 7104 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T02:06:20.606-07:00  INFO 7104 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 12.052 seconds (process running for 13.186)
+2025-10-01T02:06:28.084-07:00  INFO 7104 --- [olx-resale-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T02:06:28.084-07:00  INFO 7104 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T02:06:28.087-07:00  INFO 7104 --- [olx-resale-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-01T02:07:15.701-07:00  INFO 7104 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T02:07:15.927-07:00  INFO 7104 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T02:07:15.938-07:00  INFO 7104 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T02:07:15.943-07:00  INFO 7104 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T02:07:15.955-07:00  INFO 7104 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T02:07:23.000-07:00  INFO 9308 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Starting OlxResaleAppApplication using Java 17.0.15 with PID 9308 (C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app\target\classes started by JUNE in C:\Users\JUNE\Downloads\olx-resale-app\olx-resale-app)
+2025-10-01T02:07:23.009-07:00  INFO 9308 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T02:07:25.552-07:00  INFO 9308 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T02:07:25.731-07:00  INFO 9308 --- [olx-resale-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 1 JPA repository interface.
+2025-10-01T02:07:27.508-07:00  INFO 9308 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T02:07:27.536-07:00  INFO 9308 --- [olx-resale-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T02:07:27.538-07:00  INFO 9308 --- [olx-resale-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-01T02:07:27.697-07:00  INFO 9308 --- [olx-resale-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T02:07:27.698-07:00  INFO 9308 --- [olx-resale-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4560 ms
+2025-10-01T02:07:28.320-07:00  INFO 9308 --- [olx-resale-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T02:07:28.508-07:00  INFO 9308 --- [olx-resale-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-01T02:07:28.796-07:00  INFO 9308 --- [olx-resale-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T02:07:29.698-07:00  INFO 9308 --- [olx-resale-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T02:07:29.778-07:00  INFO 9308 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T02:07:30.441-07:00  INFO 9308 --- [olx-resale-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fe5da76
+2025-10-01T02:07:30.446-07:00  INFO 9308 --- [olx-resale-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T02:07:30.660-07:00  INFO 9308 --- [olx-resale-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T02:07:32.666-07:00  INFO 9308 --- [olx-resale-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T02:07:32.826-07:00  INFO 9308 --- [olx-resale-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T02:07:33.603-07:00  WARN 9308 --- [olx-resale-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T02:07:36.089-07:00  INFO 9308 --- [olx-resale-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T02:07:36.110-07:00  INFO 9308 --- [olx-resale-app] [main] o.o.OlxResaleAppApplication              : Started OlxResaleAppApplication in 14.369 seconds (process running for 15.299)
+2025-10-01T02:08:06.751-07:00  INFO 9308 --- [olx-resale-app] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T02:08:06.999-07:00  INFO 9308 --- [olx-resale-app] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T02:08:07.006-07:00  INFO 9308 --- [olx-resale-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T02:08:07.010-07:00  INFO 9308 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T02:08:07.026-07:00  INFO 9308 --- [olx-resale-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
