@@ -1,7 +1,0 @@
-package olx_resale_app.olx_resale_app.exception;
-
-public class UserAlreadyExistsException extends RuntimeException{
-    public UserAlreadyExistsException(String message) {
-        super(message);
-    }
-}
